@@ -47,7 +47,7 @@ static bool OpenVulkanLibrary()
 
   // Use the libvulkan.dylib from the application bundle.
 #ifdef IPHONEOS
-  std::string filename = File::GetBundleDirectory() + "/Frameworks/libMoltenVK.dylib";
+  std::string filename = File::GetBundleDirectory() + "/Frameworks/MoltenVK.framework/MoltenVK";
 #else
   std::string filename = File::GetBundleDirectory() + "/Contents/Frameworks/libvulkan.dylib";
 #endif
